@@ -33,9 +33,9 @@ pipeline {
                         }
                         stage('Integration test') {
                         agent ('Salvemachineone') {
-                                 docker {
+                                 steps {
                                         reuseNode false
-					image 'ubuntu'
+					echo "welcome to the jenkins file"
                                         }
 			}
 				steps {
