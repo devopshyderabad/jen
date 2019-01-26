@@ -32,10 +32,11 @@ pipeline {
                                 }
                         }
                         stage('Integration test') {
-                        agent {
+                        agent ('Salvemachineone') {
                                  docker {
                                         reuseNode false
 					image 'ubuntu'
+					echo " hellow" 
                                         }
 			}
 				steps {
