@@ -32,7 +32,7 @@ pipeline {
                                 }
                         }
                         stage('Integration test') {
-                        Salvemachineone {
+                        agent ('Salvemachineone') {
                                  docker {
                                         reuseNode false
 					image 'ubuntu'
