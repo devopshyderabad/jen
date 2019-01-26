@@ -36,8 +36,7 @@ pipeline {
                                  docker {
                                         reuseNode false
 					image 'ubuntu'
-					echo " hellow" 
-                                        }
+					}
 			}
 				steps {
 					echo 'Running the integration test..'
